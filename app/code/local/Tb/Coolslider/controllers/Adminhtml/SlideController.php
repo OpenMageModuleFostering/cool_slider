@@ -78,7 +78,8 @@ class Tb_Coolslider_Adminhtml_SlideController extends
 		public function saveAction(){
 			if ($data = $this->getRequest()->getPost()) {
 				if(isset($_FILES['image']['name']) && $_FILES['image']['name'] != '') {
-					$imageRename = time().rand();
+                    $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+					$imageRename = time().rand().'.'.$ext;
 				try{
 					$uploader = new Varien_File_Uploader('image');
 					// Any of these extention would work
