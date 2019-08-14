@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<config>
+<modules>
+	<Tb_Coolslider>
+		<version>0.0.1</version>
+	</Tb_Coolslider>
+</modules>
+<frontend>
+	<routers>
+		<coolslider>
+			<use>standard</use>
+				<args>
+					<module>Tb_Coolslider</module>
+					<frontName>coolslider</frontName>
+				</args>
+		</coolslider>
+	</routers>
+	<layout>
+		<updates>
+			<coolslider>
+				<file>coolslider.xml</file>
+			</coolslider>
+		</updates>
+	</layout>
+</frontend>
+<admin>
+	<routers>
+		<coolslider>
+			<use>admin</use>
+			<args>
+				<module>Tb_Coolslider</module>
+				<frontName>coolslider</frontName>
+			</args>
+			</coolslider>
+	</routers>
+</admin>
+<adminhtml>
+	<layout>
+	    <updates>
+	        <coolslider>
+	            <file>coolslider.xml</file>
+	        </coolslider>
+	    </updates>
+    </layout>
+</adminhtml>
+<global>
+	<helpers>
+		<coolslider>
+			<class>Tb_Coolslider_Helper</class>
+		</coolslider>
+	</helpers>
+	<blocks>
+		<coolslider>
+			<class>Tb_Coolslider_Block</class>
+		</coolslider>
+	</blocks>
+	<models>
+		<coolslider_adminhtml>
+	        <class>Tb_Coolslider_Adminhtml_Model</class>
+	    </coolslider_adminhtml>
+		<coolslider>
+			<class>Tb_Coolslider_Model</class>
+			<resourceModel>coolslider_mysql4</resourceModel>
+		</coolslider>
+		<coolslider_mysql4>
+     <class>Tb_Coolslider_Model_Mysql4</class>
+     <entities>
+         <coolslider>
+           <table>cool_slider</table>
+         </coolslider>
+		 <coolslider_store>
+        	<table>cool_slider_store</table>
+    	</coolslider_store>
+      </entities>
+</coolslider_mysql4>
+	</models>
+	<resources>
+		<coolslider_setup>
+			<setup>
+              <module>Tb_Coolslider</module>
+           	</setup>
+			<connection>
+                    <use>core_setup</use>
+           	</connection>
+		</coolslider_setup>
+		<coolslider_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </coolslider_write>
+        <coolslider_read>
+            <connection>
+                <use>core_read</use>
+            </connection>
+        </coolslider_read>
+	</resources>
+</global>
+</config>

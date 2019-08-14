@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+<config>
+<tabs>
+		<tbcoolslider translate="label" module="coolslider">
+			<label>TB Coolslider</label>
+            <sort_order>300</sort_order>
+		</tbcoolslider>
+	</tabs>
+	<sections>
+		<coolsliderset translate="label" module="coolslider">
+			<label>TB Coolslider</label>
+			<tab>tbcoolslider</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>100</sort_order>
+			<show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store> 
+			<groups>
+				<how_to_use translate="label">
+					<label>How to use Coolsider</label>
+					<frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+					<fields>
+						<info translate="label">
+							<label>Implementation code</label>
+							<comment>
+                                <![CDATA[Past the following Block into any cms page<br />(Home page example)<br /><strong>{{block type="coolslider/coolslider" name="coolslider" alias="coolslider" template="coolslider/coolslider.phtml"}}</strong>]]>
+                            </comment>
+							<expanded>1</expanded>
+							<frontend_type>label</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</info>
+					</fields>
+				</how_to_use>
+				<general_settings translate="label">
+					<label>Coolslider general settings</label>
+					<frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<fields>
+						<enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </enable>
+						<jquery_lib translate="label">
+                            <label>Include jquery library </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>select yes, no other jquery library included.</comment>
+                        </jquery_lib>
+						<height translate="label">
+							<label>Height (px)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<validate>validate-digits</validate>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify height of slider in px.</comment>
+						</height>
+                        <width translate="label">
+                            <label>Width (px)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <validate>validate-digits</validate>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify width of slider in px.</comment>
+                        </width>
+						<pagination translate="label">
+							<label>Pagination / Bullets</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>110</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</pagination>
+						<pause translate="label">
+							<label>Pause on hover</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>120</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</pause>
+						<navigation translate="label">
+							<label>Navigation Arrows</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+						</navigation>
+						<duration translate="label">
+							<label>Duration (ms)</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>90</sort_order>
+							<validate>validate-digits</validate>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Determines how long each slide will show in milliseconds.</comment>
+						</duration>
+						<effects translate="label">
+							 <label>Transition effect</label>
+							 <frontend_type>select</frontend_type>
+							 <source_model>coolslider_adminhtml/system_config_source_effects</source_model>
+							 <sort_order>50</sort_order>
+							 <show_in_default>1</show_in_default>
+							 <show_in_website>1</show_in_website>
+							 <show_in_store>1</show_in_store>
+						</effects>
+                        <position translate="label">
+                            <label>Content Position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>coolslider_adminhtml/system_config_source_positions</source_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </position>
+                        <slices translate="label">
+                            <label>Slices</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits</validate>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify number of slices, For slice animations only.</comment>
+                            <depends>
+                                <effects separator="|">
+                                    <value>sliceDown|sliceDownLeft|sliceUp|sliceUpLeft|sliceUpDown|sliceUpDownLeft</value>
+                                </effects>
+                            </depends>
+                        </slices>
+                        <boxcols translate="label">
+                            <label>Box columns</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits</validate>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify number of columns, For box animations only.</comment>
+                            <depends>
+                                <effects separator="|">
+                                    <value>boxRandom|boxRain|boxRainReverse|boxRainGrow|boxRainGrowReverse</value>
+                                </effects>
+                            </depends>
+                        </boxcols>
+                        <boxrows translate="label">
+                            <label>Box rows</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits</validate>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Specify number of rows, For box animations only.</comment>
+                            <depends>
+                                <effects separator="|">
+                                    <value>boxRandom|boxRain|boxRainReverse|boxRainGrow|boxRainGrowReverse</value>
+                                </effects>
+                            </depends>
+                        </boxrows>
+                        <animspeed translate="label">
+                            <label>Animation speed (ms)</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits</validate>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Slide transition speed in milliseconds.</comment>
+                        </animspeed>
+						<auto translate="label">
+							 <label>Auto slide</label>
+							 <frontend_type>select</frontend_type>
+							 <source_model>adminhtml/system_config_source_yesno</source_model>
+							 <sort_order>110</sort_order>
+							 <show_in_default>1</show_in_default>
+							 <show_in_website>1</show_in_website>
+							 <show_in_store>1</show_in_store>
+						</auto>
+					</fields>
+				</general_settings>
+			</groups>
+		</coolsliderset>
+	</sections>
+</config>

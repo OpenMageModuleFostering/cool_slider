@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<config>
+	<menu>
+		<coolslider translate="title" module="coolslider">
+			<title>coolslider Slide</title>
+			<sort_order>80</sort_order>
+			<children>
+				<addslide translate="title" module="coolslider">
+					<title>Add new Slide</title>
+					<sort_order>0</sort_order>
+					<action>coolslider/adminhtml_slide/new</action>
+				</addslide>
+				<manageslide translate="title" module="coolslider">
+					<title>Manage Slides</title>
+					<sort_order>10</sort_order>
+					<action>coolslider/adminhtml_slide/index</action>
+				</manageslide>
+				<settings>
+					<title>Settings</title>
+					<sort_order>20</sort_order>
+					<action>adminhtml/system_config/edit/section/coolsliderset</action>
+				</settings>
+			</children>
+		</coolslider>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>
+					Allow Everything
+				</title>
+			</all>
+			<admin>
+				<children>
+					<coolslider>
+						<title>coolslider Slide</title>
+						<sort_order>80</sort_order>
+						<children>
+							<addslide>
+								<title>Add new slide</title>
+								<sort_order>0</sort_order>
+							</addslide>
+							<manageslide>
+									<title>Manage Slides</title>
+									<sort_order>10</sort_order>
+								</manageslide>
+								<settings>
+									<title>Settings</title>
+									<sort_order>20</sort_order>
+								</settings>
+						</children>
+					</coolslider>
+					<system>
+						<children>
+							<config>
+								<children>
+									<coolsliderset>
+										<title>coolslider settings</title>
+									</coolsliderset>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

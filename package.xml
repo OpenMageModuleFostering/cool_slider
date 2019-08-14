@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<package>
+    <name>cool_slider</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Cool slider extension with advanced configuration options and easy manageable slider manager.</summary>
+    <description>&lt;h2&gt;OVERVIEW&lt;/h2&gt;&#xD;
+Cool slider extension is based on jquery Nivo slider with advanced configuration options and easy manageable slider manager make your store front more eye-catching. This extension offers lots of configuration options to control it from the backend, auto play settings, play speed, navigation buttons, height of slideshow, pause on hover and or more. This extension also compatible with all modern browsers.&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;h2&gt;How to use&lt;/h2&gt;&#xD;
+You can insert it to any cms page by inserting the code below and also placed it into category pages by creating static block and place the code into the static block.&#xD;
+&lt;br /&gt;&#xD;
+&lt;strong&gt;Implementation code:&lt;/strong&gt;&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+{{block type="coolslider/coolslider" name="coolslider" alias="coolslider" template="coolslider/coolslider.phtml"}}&lt;br /&gt;&lt;br /&gt;&#xD;
+&lt;h2&gt;General Settings&lt;/h2&gt;&#xD;
+You can configure slider settings through various configuration options in admin simply accessing through System &gt; Configuration &gt; TB Coolslider &gt; TB Coolslider : Coolslider general settings tab.&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Enable &#x2013; Enable or Disable extension.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Include jquery library &#x2013; Add jquery library into head section if you don&#x2019;t have already and if you have a latest jquery library already included by some other extension then set it to no. &lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Width &#x2013; set specific width of slider container, otherwise leave blank. &lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Height  &#x2013; set specific height of slider container, if leave blank then default height 300px will be use. &lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt; Transition effect  &#x2013; Choose transition effect on slider, form various options. &lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt; Slices  &#x2013; Enter integer value, For slice animations only&#xD;
+ . &lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Box columns &#x2013; Enter integer value, For box animations only.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Box rows &#x2013; Enter integer value, For box animations only.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Animation speed &#x2013; specify the slide transition speed, default 500ms.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Duration &#x2013; Determines how long each slide will show in milliseconds, default 2000ms.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Navigation Arrows &#x2013; Next previous slide controls.&lt;/span&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;br /&gt;&#xD;
+&lt;span&gt;Content Position &#x2013; Determine the position of content in the slide.&lt;/span&gt;&#xD;
+&lt;br /&gt;&lt;br /&gt;&#xD;
+&lt;h2&gt;Manage Slides&lt;/h2&gt;&#xD;
+After installing Cool slider entension you will find new item has been added to Admin navigation menu &#x201C;Cool Slider&#x201D; which as three sub-menu items -Add new slide-, -Manage Slides- and -Settings-&#xD;
+</description>
+    <notes>Initial release.</notes>
+    <authors><author><name>Rehan Mobin</name><user>rehanmobin</user><email>m.rehan.mobin@gmail.com</email></author></authors>
+    <date>2014-05-15</date>
+    <time>19:48:22</time>
+    <contents><target name="magelocal"><dir name="Tb"><dir name="Coolslider"><dir><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Directions.php" hash="f0101183c87dd3e4c4994465f1511770"/><file name="Effects.php" hash="80a8635dd7dc8d4eb2d1e7cbb9165cc3"/><file name="Positions.php" hash="c5233cf807e03fc89c0d416713285391"/></dir></dir></dir></dir></dir><dir name="Block"><dir name="Adminhtml"><dir name="Slider"><dir name="Edit"><file name="Form.php" hash="e6790fdc8a816d342f057afe5d6d05e7"/><dir name="Tab"><file name="Info.php" hash="8dd92266b086d2e201c1a2cc13591a31"/></dir><file name="Tabs.php" hash="a880e5f6f99815aa3e9c10078468a134"/></dir><file name="Edit.php" hash="f542381685d0e666d9d79b38a955ff14"/><file name="Grid.php" hash="88f5787ab3344dc9ce764b091bade7d5"/><dir name="Render"><file name="Image.php" hash="58c56beeed61b00fd1c226ea96acd088"/></dir></dir><file name="Slider.php" hash="053a3aa641ef23523144c4934d254bf5"/></dir><file name="Coolslider.php" hash="982c44f27662407e6ac1adf9550e8391"/></dir><dir name="Helper"><file name="Data.php" hash="4eca8676ee083c61eedc986b1c110928"/></dir><dir name="Model"><file name="Coolslider.php" hash="6b7bb889cd3b7712bc75a5f6b717d43f"/><dir name="Mysql4"><dir name="Coolslider"><file name="Collection.php" hash="e935f38bc057d958a19370c6c866cb8e"/></dir><file name="Coolslider.php" hash="e8a68ebb7bca7bb3e22f13b7b888660b"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="SlideController.php" hash="d03daf543b5031a1253c561bcbe69f08"/></dir><file name="IndexController.php" hash="a9a8e7e2d2a215eb793fad74c506fba4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="30840537431498844fd8ee5f112803e0"/><file name="config.xml" hash="392b8fce14f5f63204cffb8537f94558"/><file name="system.xml" hash="a5b7443bb91ae9bfba60f4af5776a018"/></dir><dir name="sql"><dir name="coolslider_setup"><file name="mysql4-install-0.0.1.php" hash="0652a48e250d531fd4ffc22f6993d79d"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Tb_Coolslider.xml" hash="d9a94d000a34d847a944dafe0f090ac8"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="coolslider.xml" hash="77c3fddd6f0df78a9e3623317621797d"/></dir><dir name="template"><dir name="coolslider"><file name="coolslider.phtml" hash="98a3def3cd6489f0ab726949ca079559"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="coolslider.xml" hash="f5ad3400209549f9256bcc46d7089e55"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><file name="coolslider.css" hash="b3052cd0493c1aa66a3752ba4a4f9c1f"/></dir><dir name="images"><dir name="coolslider"><file name="left-arrow.png" hash="aa15f6f1accb60c4ed553708c14dbb34"/><file name="right-arrow.png" hash="b0797dd3cd1cf07d84d144a3b0c51fed"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="coolslider"><file name="jquery.min.js" hash="2c57990a020cc3a35c4a603413d67a28"/><file name="jquery.nivo.slider.js" hash="bd3db6a383fe05a9ee9dcde94be9da1e"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
