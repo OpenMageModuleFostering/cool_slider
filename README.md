@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Cool slider extension with advanced configuration options and easy manageable slider manager.
