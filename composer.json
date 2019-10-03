@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/cool_slider",
+    "name": "OpenMageModuleFostering\/cool_slider",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "Cool slider extension with advanced configuration options and easy manageable slider manager.",
     "authors": [
-    {
-        "name": "Rehan Mobin",
-        "email": "m.rehan.mobin@gmail.com"
-    }
-],
+        {
+            "name": "Rehan Mobin",
+            "email": "m.rehan.mobin@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
